@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ title }}</title>
+		<link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Scripts for the background -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/ocanvas/2.8.1/ocanvas.min.js'></script>
+		<script type="text/javascript" src="{{ '/scripts/background.js' | url }}"></script>
+
+	</head>
+
+	<body>
+		<canvas id="canvas"></canvas>
+
+		<header>
+			<nav class="main-nav">
+				<input type="checkbox" id="check"/>
+				<label for="check" class="menu-btn">
+					<i class="fas fa-bars"></i>
+				</label>
+
+				<a href="{{ '/' | url}}" class="logo">
+				danny@eth:~>
+				<span class="blink">_</span>
+				</a>
+
+				<ul class="navlinks">
+					<li>
+						<a href="{{ '/blog/' | url }}">Blog</a>
+					</li>
+					<li>
+						<a href="{{ '/summaries/' | url }}">Summaries</a>
+					</li>
+					<li>
+						<a href="{{ '/about/' | url }}">About</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<center>
+				{{ content | safe }}
+			</center>
+		</main>
+
+		<footer id="footer">
+			<webring-banner>
+				<p>Member of the <a href="https://polyring.ch">Polyring</a> webring</p>
+			</webring-banner>
+			<script async src="https://polyring.ch/embed.js" charset="utf-8"></script>
+
+			<p>
+				©Danny Camenisch 2022, <a href="mailto:dcamenisch@ethz.ch">dcamenisch@ethz.ch</a>
+			</p>
+		</footer>
+
+	</body>
+</html>
