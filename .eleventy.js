@@ -12,7 +12,10 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/uploads/");
     eleventyConfig.addPassthroughCopy("src/assets/");
 
-    eleventyConfig.addPlugin(pluginRss);
+    eleventyConfig.addPlugin(rssPlugin, {
+        posthtmlRenderOptions: {}
+    });
+
     eleventyConfig.addPlugin(syntaxHighlight);
 
     return {

@@ -28,19 +28,16 @@
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
   </author>
-  {%- for post in collections.blogposts %} 
-  {% set absolutePostUrl %}
-    {{ post.url | url | absoluteUrl(metadata.url) }}
-  {% endset %}
+  {%- for post in collections.blogposts | reverse %}
+  {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset -%}
   <entry>
     <title>{{ post.data.title }}</title>
-    <link href="{{ absolutePostUrl }}" />
+    <link href="{{ absolutePostUrl }}"/>
     <published>{{ post.date | dateToRfc3339 }}</published>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <content type="html">
-        {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
-    </content>
+    <description type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}</description>
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}</content>
   </entry>
   {%- endfor %}
 </feed>
