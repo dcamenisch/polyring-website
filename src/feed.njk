@@ -36,7 +36,7 @@
     <published>{{ post.date | dateToRfc3339 }}</published>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    <description type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}</description>
+    <summary>{{ post.data.desc }}</summary>
     <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}</content>
   </entry>
   {%- endfor %}
