@@ -19,7 +19,7 @@ Now you simply log in to your account and create a new instance. Make sure to se
 
 Now you are good to go! If there is no instance available in your region, just try it again the next day. I had to wait for 2 days until I could get an instance.
 
-From now on you have your instance for free, as long as you use if. Just install your favorite game, make sure to open the ports and enjoy! (I can recommend to check out Minecraft Vault hunters!)
+From now on you have your instance for free, as long as you use if. Just install your favorite game, make sure to open the ports and enjoy! [Here](https://blogs.oracle.com/developers/post/how-to-set-up-and-run-a-really-powerful-free-minecraft-server-in-the-cloud) is a good tutorial for creating a Minecraft server (I can recommend to check out Minecraft Vault hunters).
 
 <center>
 <img src="{{ '/assets/vaulthunters.png' | url }}" alt="VaultHunters Logo" width="600"/>
