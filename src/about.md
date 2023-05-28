@@ -11,7 +11,7 @@ Hi there, stranger! I'm welcoming you to my little site. Here I'm sharing my sum
 
 You can also find me on:
 
-<a href="https://github.com/DannyCamenisch" class="social-icon"> 
+<a href="https://github.com/dcamenisch" class="social-icon"> 
     <i class="fa fa-github" aria-hidden="true"></i>
 </a>
 
