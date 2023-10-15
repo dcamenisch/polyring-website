@@ -4,27 +4,27 @@ desc: How to stay awake for 36 hours and be productive
 ---
 
 <center>
-<img src="{{ '/assets/starthack.png' | url }}" alt="StartHack Logo" width="500"/>
+    <img src="{{ '/assets/starthack.png' | url }}" alt="StartHack Logo" width="500"/>
 </center>
 
-I think it was on Christmas Eve when I got the message if I want to participate in a hackathon (StartHack 22). Without hesitation, I responded that I would be in. I never participated in a hackathon before, so I had no clue what was coming, but I was excited.
+It all began on a Christmas Eve when I received an invitation to participate in a hackathon (StartHack '22). Without a second thought, I enthusiastically accepted the challenge. I had never been a part of a hackathon before, so I had no idea what to expect, but I was filled with anticipation.
 
-Some weeks ago it was finally time, in the afternoon we went to St. Gallen. Arriving at Olma Messen, we got our badges and were already handed tons of goodies - ironically including a lot of hygiene products! The opening ceremony was rather boring, but after that we got introduced to the case partners that provided the challenges we would work on. 
+Weeks passed, and the moment finally arrived. In the afternoon, we headed to St. Gallen. Upon arriving at Olma Messen, we received our badges and a generous amount of swag, including an unexpected abundance of hygiene products! The opening ceremony was somewhat uneventful, but what followed was truly exciting - our introduction to the case partners who presented the challenges we would tackle.
 
-At around 23 o'clock the hacking finally started, the event would last for 36 hours. We decided to go with PTV Group, a software company that focuses on mobility and transportation, as our case partner. But in this post I don't want to focus on our product.
+Around 23 o'clock, the hacking officially began, and the event was set to last a grueling 36 hours. We decided to team up with PTV Group, a software company specializing in mobility and transportation, as our case partner. However, I won't dwell on the specifics of our project in this post.
 
-The first night was where I got the most sleep, but fuelled by a lot of Mate's and FocusWater, I still stayed up until late in the night to brainstorm. Luckily I brought my own sleeping mat, as the ones that were provided were fully occupied even before the event started. People slept everywhere and in between some coat racks, I found my own sleeping place.
+The first night was when I managed to catch the most sleep, yet fueled by copious amounts of Mate and FocusWater, I stayed up late into the night brainstorming. Fortunately, I had brought my own sleeping mat because the provided sleeping areas were all occupied even before the event began. People found resting spots everywhere, even nestled amongst coat racks.
 
-In the next day we continued to work on our product. The hall where our workspace was, was so darkened that no sunlight could enter. When going outside trying to get some fresh air the sun seemed a lot brighter than normal and burned the eyes. But fresh air combined with some water to the face felt really refreshing. During the event we were provided with free food, including a lot of unhealthy snacks, I tried to stay away from the chocolate and rather grab an apple. 
+The following day was dedicated to refining our project. The workspace was so dimly lit that no sunlight could penetrate. Stepping outside for a breath of fresh air, the sun appeared abnormally bright and stung the eyes. Nonetheless, fresh air and a splash of water on the face felt incredibly rejuvenating. Free food was provided throughout the event, which included an array of unhealthy snacks. I made an effort to avoid the chocolates and opted for an apple instead.
 
-After working a long day and without being finished we went into the last night. I was so tired that I took a two hour nap. When I got up, if felt so energetic I wanted to get to work again immediately. As the night went on and the effect of the caffeine started to dwindle, things got pretty random. At around 4-5 o'clock in the morning we were finally finished, or at least we thought. I stayed up a bit more to write some text and clean up some code. But in the end I didn't trust my sleepy brain to actually write functioning code, so I decided to not push it on our live product. 
+As we ventured into the final night, exhaustion had taken its toll. I managed to squeeze in a two-hour nap and, upon awakening, felt strangely re-energized, ready to dive back into work. As the night wore on and the effects of caffeine began to wane, things took a surreal turn. Around 4-5 in the morning, we believed we were finally done, or so we thought. I stayed up a bit longer to refine some text and clean up some code. Ultimately, I didn't trust my sleep-deprived brain to produce functional code, so I refrained from making live changes to our product.
 
-At 10 o'clock we had to be finished and have handed in our work. Soon after we had to pitch our product to the case partners. They gave us a lot of feedback and really seemed to like our product. In the afternoon there was the award ceremony where each case partner announced their winner. When it was announced that we won our case we were very excited, as this meant that we would pitch on the main stage of the conference.
+By 10 a.m., we had to wrap up and submit our work. Shortly after, we had to present our product to the case partners. They provided valuable feedback and seemed genuinely impressed with our project. In the afternoon, the awards ceremony took place, where each case partner announced their respective winners. The moment we learned that we had won our case, excitement coursed through us. This meant we would present our project on the main stage of the conference.
 
-We were given 5 minutes to prepare our slide deck. After that we still had to wait quite some time until we got to the main stage. As the pitches of the other case winners started, we soon realized that the put a lot more effort into their slides then we did. In the end I think our three minute pitch was pretty good even though our slides were nowhere near as good as the other team.
+We were given a mere 5 minutes to prepare our slide deck. Afterward, we endured a considerable wait before taking the main stage. As the other case winners began their pitches, it became evident that they had invested more effort into their slides than we had. Despite our less elaborate presentation, I believe our three-minute pitch went over quite well.
 
 <center>
-<img src="{{ '/assets/starthack_mainstage.jpeg' | url }}" alt="StartHack Logo" width="500"/>
+    <img src="{{ '/assets/starthack_mainstage.jpeg' | url }}" alt="StartHack Logo" width="500"/>
 </center>
 
-We might not have won the whole event, but after 36 hours of hard work it felt awesome to be able to present our product to the crowed. What felt even more amazing was to finally get home in the evening and dropping dead asleep.
+We might not have emerged as overall event winners, but after 36 hours of relentless effort, it felt fantastic to present our project to the crowd. Even more rewarding was the prospect of finally heading home in the evening and falling into a deep, well-deserved slumber.
