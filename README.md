@@ -1,6 +1,6 @@
 # polyring-website
 
-[![Build and Deploy to GitHub Pages](https://github.com/dcamenisch/polyring-website/actions/workflows/node.js.yml/badge.svg)](https://github.com/dcamenisch/polyring-website/actions/workflows/node.js.yml)
+[![Build and Deploy to GitHub Pages](https://github.com/DannyCamenisch/polyring-website/actions/workflows/node.js.yml/badge.svg)](https://github.com/DannyCamenisch/polyring-website/actions/workflows/node.js.yml)
 
 Source code for [my personal website](https://n.ethz.ch/~dcamenisch/), that is part of the [Polyring](https://polyring.ch). The website includes a blog, summaries and an about me section.
 
