@@ -12,7 +12,7 @@ mkdir -p src/uploads
 
 # Function to compile LaTeX files
 compile_latex() {
-    local latex_dir="src/documents/latex"
+    local latex_dir="../summaries/documents/latex"
     if [ -d "$latex_dir" ]; then
         # Use a safer glob pattern check
         shopt -s nullglob
@@ -57,7 +57,7 @@ compile_latex() {
 
 # Function to compile Typst files
 compile_typst() {
-    local typst_dir="src/documents/typst"
+    local typst_dir="../summaries/documents/typst"
     if [ -d "$typst_dir" ]; then
         # Use a safer glob pattern check
         shopt -s nullglob
@@ -88,7 +88,7 @@ compile_typst() {
 
 # Function to copy pre-compiled PDFs
 copy_pdfs() {
-    local pdf_dir="src/documents/pdf"
+    local pdf_dir="../summaries/documents/pdf"
     if [ -d "$pdf_dir" ]; then
         # Use a safer glob pattern check
         shopt -s nullglob

@@ -48,17 +48,28 @@ jobs:
         typst --version
     
     - name: Build documents (compile LaTeX and Typst to PDFs)
-      run: ./build-documents.sh
+      run: |
+        cd website
+        ./build-documents.sh
+    
+    - name: Commit compiled PDFs
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add website/src/uploads/*.pdf
+        git diff --staged --quiet || git commit -m "Auto-compile PDFs from LaTeX and Typst sources"
+        git push || echo "No changes to push"
     
     - name: Install dependencies and build website
       run: |
+        cd website
         npm install
         npm run build
     
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: public
+        path: website/public
 
   deploy:
     # Only deploy on pushes to main branch

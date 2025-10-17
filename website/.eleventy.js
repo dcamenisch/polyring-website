@@ -13,13 +13,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets/");
     eleventyConfig.addPassthroughCopy("src/.nojekyll");
 
-    // Ignore the documents directory (source files for PDFs)
-    eleventyConfig.ignores.add("src/documents/**");
-
-    eleventyConfig.addPlugin(rssPlugin, {
-        posthtmlRenderOptions: {}
-    });
-
     eleventyConfig.addPlugin(syntaxHighlight);
 
     return {
@@ -27,6 +20,6 @@ module.exports = function(eleventyConfig) {
             input: "src",
             output: "public"
         },
-        pathPrefix: "/polyring-website/",
+        pathPrefix: "/summaries/",
     };
 };

@@ -14,14 +14,14 @@ This directory contains source files for PDFs that are built and deployed to the
 
 Place your PDF files directly in the `pdf/` directory:
 ```
-src/documents/pdf/MyDocument.pdf
+summaries/documents/pdf/MyDocument.pdf
 ```
 
 ### Adding LaTeX Documents
 
 Place your LaTeX source files in the `latex/` directory:
 ```
-src/documents/latex/MyDocument.tex
+summaries/documents/latex/MyDocument.tex
 ```
 
 The build process will automatically compile them to PDFs using `pdflatex`.
@@ -30,7 +30,7 @@ The build process will automatically compile them to PDFs using `pdflatex`.
 
 Place your Typst source files in the `typst/` directory:
 ```
-src/documents/typst/MyDocument.typ
+summaries/documents/typst/MyDocument.typ
 ```
 
 The build process will automatically compile them to PDFs using `typst`.
@@ -40,8 +40,9 @@ The build process will automatically compile them to PDFs using `typst`.
 During the GitHub Actions build:
 1. LaTeX files are compiled to PDFs using TeX Live
 2. Typst files are compiled to PDFs using the Typst compiler
-3. All PDFs (pre-compiled and generated) are copied to `src/uploads/`
-4. The `src/uploads/` directory is then copied to the final output by Eleventy
+3. All PDFs (pre-compiled and generated) are copied to `website/src/uploads/`
+4. The `website/src/uploads/` directory is then copied to the final output by Eleventy
+5. Compiled PDFs are also committed back to the repository for version control
 
 ## Referencing Documents
 
