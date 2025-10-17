@@ -24,6 +24,6 @@ module.exports = function(eleventyConfig) {
             input: "src",
             output: "public"
         },
-        pathPrefix: "/",
+        pathPrefix: "/polyring-website/",
     };
 };

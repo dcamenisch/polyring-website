@@ -10,7 +10,7 @@ Source code for [my personal website](https://n.ethz.ch/~dcamenisch/), that is p
 
 This website is automatically built and deployed to GitHub Pages using GitHub Actions. Every push to the `main` branch triggers a build and deployment.
 
-The site is available at: https://dcamenisch.github.io/
+The site is available at: https://dcamenisch.github.io/polyring-website/
 
 ### Setup
 
