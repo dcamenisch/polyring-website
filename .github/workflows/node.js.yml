@@ -41,8 +41,11 @@ jobs:
     
     - name: Install Typst
       run: |
-        curl -fsSL https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz | tar -xJ
+        # Pin to a specific version for reproducibility and security
+        TYPST_VERSION="v0.11.1"
+        curl -fsSL "https://github.com/typst/typst/releases/download/${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz" | tar -xJ
         sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/
+        typst --version
     
     - name: Build documents (compile LaTeX and Typst to PDFs)
       run: ./build-documents.sh
