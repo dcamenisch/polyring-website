@@ -53,5 +53,8 @@ Temporary Items
 node_modules
 public
 
-# ignore large pdf files
+# Track PDFs in summaries and website
+# Only ignore PDFs outside these directories
 *.pdf
+!summaries/**/*.pdf
+!website/src/uploads/*.pdf

@@ -13,10 +13,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets/");
     eleventyConfig.addPassthroughCopy("src/.nojekyll");
 
-    eleventyConfig.addPlugin(rssPlugin, {
-        posthtmlRenderOptions: {}
-    });
-
     eleventyConfig.addPlugin(syntaxHighlight);
 
     return {
@@ -24,6 +20,6 @@ module.exports = function(eleventyConfig) {
             input: "src",
             output: "public"
         },
-        pathPrefix: "/polyring-website/",
+        pathPrefix: "/summaries/",
     };
 };
