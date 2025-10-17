@@ -4,7 +4,21 @@
 
 Source code for [my personal website](https://n.ethz.ch/~dcamenisch/), that is part of the [Polyring](https://polyring.ch). The website includes a blog, summaries and an about me section.
 
-⚠️ This repository does not include the summaries themself ⚠️
+## Document Management
+
+This repository now supports building PDFs from source files! You can add:
+
+- **Pre-compiled PDFs** in `src/documents/pdf/` - These will be copied directly to the website
+- **LaTeX files** (`.tex`) in `src/documents/latex/` - Automatically compiled to PDF during build
+- **Typst files** (`.typ`) in `src/documents/typst/` - Automatically compiled to PDF during build
+
+During the GitHub Actions build process:
+1. LaTeX files are compiled using TeX Live
+2. Typst files are compiled using the Typst compiler
+3. All PDFs are copied to `src/uploads/` and then deployed to the website
+4. Documents can be referenced in pages with `../uploads/filename.pdf`
+
+See `src/documents/README.md` for detailed usage instructions.
 
 ## GitHub Pages Deployment
 

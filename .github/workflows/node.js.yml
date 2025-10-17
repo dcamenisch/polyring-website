@@ -34,7 +34,20 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     
-    - name: Install dependencies and build
+    - name: Install LaTeX
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended
+    
+    - name: Install Typst
+      run: |
+        curl -fsSL https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz | tar -xJ
+        sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/
+    
+    - name: Build documents (compile LaTeX and Typst to PDFs)
+      run: ./build-documents.sh
+    
+    - name: Install dependencies and build website
       run: |
         npm install
         npm run build

@@ -13,6 +13,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/assets/");
     eleventyConfig.addPassthroughCopy("src/.nojekyll");
 
+    // Ignore the documents directory (source files for PDFs)
+    eleventyConfig.ignores.add("src/documents/**");
+
     eleventyConfig.addPlugin(rssPlugin, {
         posthtmlRenderOptions: {}
     });

@@ -1,0 +1,41 @@
+% Example LaTeX document
+% This file will be compiled to PDF during the build process
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+
+\title{Example LaTeX Document}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+This is an example LaTeX document that demonstrates how to include LaTeX source files in the repository. During the build process, this file will be compiled to a PDF and placed in the \texttt{uploads/} directory.
+
+\section{Adding Your Own Documents}
+
+To add your own LaTeX documents:
+
+\begin{enumerate}
+    \item Place your \texttt{.tex} file in \texttt{src/documents/latex/}
+    \item Commit and push to the repository
+    \item The GitHub Actions workflow will compile it to PDF
+    \item Reference it in your pages with \texttt{../uploads/filename.pdf}
+\end{enumerate}
+
+\section{Features}
+
+You can use all standard LaTeX features:
+\begin{itemize}
+    \item Mathematical equations: $E = mc^2$
+    \item Lists and enumerations
+    \item Tables and figures
+    \item Citations and references
+\end{itemize}
+
+\end{document}
